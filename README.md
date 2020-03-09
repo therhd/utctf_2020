@@ -48,13 +48,13 @@ $ dig +short -x 3.88.57.227
 ec2-3-88-57-227.compute-1.amazonaws.com
 ```
 
-Yeah, I don't think google uses AWS  for their dns... **3.88.57.227** likely in scope for the CTF. Let's check the weird traffic that was going to "dns.google.com" aka 35.225.16.221
+Yeah, I don't think google uses AWS  for their dns... **3.88.57.227** likely in scope for the CTF. Let's check the weird traffic that was going to "dns.google.com" aka 3.88.57.227
 
 Packets 43-44: DNS request to **35.188.185.68**
 - DNS Request: d2hvYW1pCg==
   - b64 decoded: **whoami**
 - DNS Response: cm9vdA==
-  - b64 decoded: **root% **
+  - b64 decoded: **root%**
 
 Packets 107-108: DNS request to **35.188.185.68**
 - DNS Request: bHMgLWxhCg==
@@ -217,7 +217,7 @@ utflag{2fbe9adc2ad89c71da48cabe90a121c0}
 by phleisch"
 
 We are provided signals.wav
-SSTV is slow scan telivision. There are occasionally broadcasts in SSTV from the International Space Station that can be captured with consumer SDR equipment (Software defined radio)
+SSTV is slow scan television. There are occasionally broadcasts in SSTV from the International Space Station that can be captured with consumer SDR equipment (Software defined radio)
 
 SSTV can be decoded with **qsstv** on linux.
 
