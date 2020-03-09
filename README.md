@@ -50,13 +50,13 @@ ec2-3-88-57-227.compute-1.amazonaws.com
 
 Yeah, I don't think google uses AWS  for their dns... **3.88.57.227** likely in scope for the CTF. Let's check the weird traffic that was going to "dns.google.com" aka 3.88.57.227
 
-Packets 43-44: DNS request to **35.188.185.68**
+Packets 43-44: DNS request to "dns.google.com" - 35.188.185.68 (during capture)
 - DNS Request: d2hvYW1pCg==
   - b64 decoded: **whoami**
 - DNS Response: cm9vdA==
   - b64 decoded: **root%**
 
-Packets 107-108: DNS request to **35.188.185.68**
+Packets 107-108: DNS request to "dns.google.com"- 35.188.185.68 (during capture)
 - DNS Request: bHMgLWxhCg==
   - b64 decoded: **ls -la**
 - DNS Response: giant base64 string
@@ -72,11 +72,10 @@ drwxr-xr-x    1 root     root          4096 Mar  6 08:09 ..
 -rwxr-xr-x    1 root     root       2533823 Mar  6 04:44 server
 -rw-r--r--    1 root     root          1693 Mar  5 23:50 server.go
 ```
-Okay, seems like **3.88.57.227** has been compromised, and is running a shell that is using the DNS protocol as cover to smuggle traffic.
+Okay, seems like "dns.google.com" or 35.188.185.68 was been compromised, and was running a shell that is using the DNS protocol as cover to smuggle traffic.
 
+Lets see if "dns.google.com" - now 35.88.57.227 is also compromised by sending commands to it over DNS.
 
-
-Let's try sending our own command to the shell running on **3.88.57.227**. 
 
 ```
 $ dig +short $(echo -n "cat flag.txt" | base64) @3.88.57.227 | sed 's/"//g' | base64 --decode
