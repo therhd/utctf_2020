@@ -91,6 +91,49 @@ utflag{$al1y_s3L1S_sE4_dN$}%
 
 by bnuno"
 
+Provided pic.png2
+
+```
+$ hexdump -C pic.png2 | less
+00000000  50 4e 47 32 77 69 64 74  68 3d 05 cf 68 65 69 67  |PNG2width=..heig|
+00000010  68 74 3d 02 88 7f 7f 7f  7f 7f 7f 7f 7f 7f 7f 7f  |ht=.............|
+00000020  7f 7f 7f 7f 7f 7f 7f 7f  7f 7f 7f 7f 7f 7f 7f 7f  |................|
+*
+000005c0  7f 7f 7f 7f 7f 7f 7f 7f  7f 7f d2 9f a7 88 00 15  |................|
+000005d0  88 00 15 9f 30 41 ff 7f  27 ff 7f 27 ff 7f 27 ff  |....0A..'..'..'.|
+000005e0  7f 27 ff 7f 27 ff 7f 27  ff 7f 27 ff 7f 27 ff 7f  |.'..'..'..'..'..|
+000005f0  27 ff 7f 27 ff 7f 27 ff  7f 27 ff 7f 27 ff 7f 27  |'..'..'..'..'..'|
+00000600  ff 7f 27 ff 7f 27 ff 7f  27 ff 7f 27 ff 7f 27 ff  |..'..'..'..'..'.|
+00000610  7f 27 ff 7f 27 ff 7f 27  ff 7f 27 ff 7f 27 ff 7f  |.'..'..'..'..'..|
+00000620  27 ff 7f 27 ff 7f 27 ff  7f 27 ff 7f 27 ff 7f 27  |'..'..'..'..'..'|
+00000630  ff 7f 27 ff 7f 27 ff 7f  27 ff 7f 27 ff 7f 27 ff  |..'..'..'..'..'.|
+00000640  7f 27 ff 7f 27 ff 7f 27  ff 7f 27 ff 7f 27 ff 7f  |.'..'..'..'..'..|
+00000650  27 ff 7f 27 ff 7f 27 ff  7f 27 ff 7f 27 ff 7f 27  |'..'..'..'..'..'|
+00000660  ff 7f 27 ff 7f 27 ff 7f  27 ff 7f 27 ff 7f 27 ff  |..'..'..'..'..'.|
+00000670  7f 27 ff 7f 27 ff 7f 27  ff 7f 27 ff 7f 27 ff 7f  |.'..'..'..'..'..|
+00000680  27 ff 7f 27 ff 7f 27 ff  7f 27 ff 7f 27 ff 7f 27  |'..'..'..'..'..'|
+00000690  ff 7f 27 ff 7f 27 ff 7f  27 ff 7f 27 fb f7 f8 93  |..'..'..'..'....|
+000006a0  18 2b 88 00 15 88 00 15  da af b6 3f 48 cc 3f 48  |.+.........?H.?H|
+000006b0  cc 3f 48 cc 3f 48 cc 3f  48 cc 3f 48 cc 3f 48 cc  |.?H.?H.?H.?H.?H.|
+000006c0  3f 48 cc 3f 48 cc 3f 48  cc 3f 48 cc 3f 48 cc 3f  |?H.?H.?H.?H.?H.?|
+000006d0  48 cc 3f 48 cc 3f 48 cc  3f 48 cc 3f 48 cc 3f 48  |H.?H.?H.?H.?H.?H|
+000006e0  cc 3f 48 cc 3f 48 cc 3f  48 cc 3f 48 cc 3f 48 cc  |.?H.?H.?H.?H.?H.|
+[...]
+002c1b40  a3 49 a4 a3 49 a4 a3 49  a4 a3 49 a4 a3 49 a4 a3  |.I..I..I..I..I..|
+002c1b50  49 a4 a3 49 a4 a3 49 a4  a3 49 a4 a3 49 a4 a3 49  |I..I..I..I..I..I|
+002c1b60  a4 a3 49 a4 a3 49 a4 a3  49 a4 a3 49 a4 a3 49 a4  |..I..I..I..I..I.|
+002c1b70  a3 49 a4 a3 49 a4 a3 49  a4 a3 49 a4 a3 49 a4 a3  |.I..I..I..I..I..|
+002c1b80  49 a4 a3 49 a4 a3 49 a4  a3 49 a4 a3 49 a4 a3 49  |I..I..I..I..I..I|
+002c1b90  a4 a3 49 a4 a3 49 a4 a3  49 a4 a3 49 a4 a3 49 a4  |..I..I..I..I..I.|
+002c1ba0  a3 49 a4 a3 49 a4 a3 49  a4 a3 49 a4 a3 49 a4 a3  |.I..I..I..I..I..|
+002c1bb0  49 a4 a3 49 a4 a3 49 a4  a3 49 a4 a3 49 a4 a3 49  |I..I..I..I..I..I|
+002c1bc0  a4 a3 49 a4 a3 49 a4 a3  49 a4 a3 49 a4 a3 49 a4  |..I..I..I..I..I.|
+002c1bd0  a3 49 a4 a3 49 a4 a3 49  a4 a3 49 a4 a3 49 a4 a3  |.I..I..I..I..I..|
+002c1be0  49 a4 a3 49 a4 a3 49 a4  a3 49 a4 a3 49 a4 a3 49  |I..I..I..I..I..I|
+002c1bf0  a4 a3 49 a4 a3 49 a4 a3  49 a4 a3 49 a4           |..I..I..I..I.|
+002c1bfd
+```
+
 Solution:
 
 ```python
