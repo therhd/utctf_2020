@@ -137,7 +137,6 @@ $ hexdump -C pic.png2 | less
 Solution:
 
 ```python
-import binascii
 from PIL import Image
 
 input_filename = '/Users/rdubisky/Desktop/code/ctf/utctf/png2/pic.png2'
