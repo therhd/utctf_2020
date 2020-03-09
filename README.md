@@ -189,6 +189,9 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ```
 Use binwalk to extract all identified embedded files.
 ```
+$ binwalk -e Griffith_Observatory.png
+$ ls
+Griffith_Observatory.png            _Griffith_Observatory.png.extracted
 $ cd _Griffith_Observatory.png.extracted 
 $ ls -lah
 total 304
