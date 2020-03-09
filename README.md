@@ -48,7 +48,7 @@ $ dig +short -x 3.88.57.227
 ec2-3-88-57-227.compute-1.amazonaws.com
 ```
 
-Yeah, I don't think google uses AWS  for their dns... **3.88.57.227** likely in scope for the CTF. Let's check the weird traffic that was going to "dns.google.com" aka 3.88.57.227
+Yeah, I don't think google uses AWS  for their dns... **3.88.57.227** likely in scope for the CTF. Let's check the weird traffic that was going to "dns.google.com" (35.188.185.68 during capture)
 
 Packets 43-44: DNS request to "dns.google.com" - 35.188.185.68 (during capture)
 - DNS Request: d2hvYW1pCg==
